@@ -7,6 +7,24 @@ html {
     font-family: 'McLaren', cursive;
 }
 body {
-    background: rgba(185,250,107.64);
-    padding: 0 3vw;
+    background: rgba(255, 186, 47, 0.64);
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer-text {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid red;
+}
+.note {
+    margin: 4vw 0 0 2vw;
+}
+.header {
+    background-color: rgba(185,250,107.64); 
+}
+.header-text {
+    margin: 10vw 0 0 2vw;
 }
