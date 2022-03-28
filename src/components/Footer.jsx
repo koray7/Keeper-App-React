@@ -4,7 +4,7 @@ const Footer = () => {
     console.log(liveTime)
     return(
         <div className="footer">
-        <p className="footer-text">Copyright {liveTime}</p>
+        <footer className="footer-text">Copyright {liveTime}</footer>
         </div>
     )
 }
