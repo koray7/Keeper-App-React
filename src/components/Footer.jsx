@@ -1,12 +1,12 @@
-const Footer = () => {
+import React from "react";
 
-    const liveTime = new Date().getFullYear()
-    console.log(liveTime)
-    return(
-        <div className="footer">
-        <footer className="footer-text">Copyright {liveTime}</footer>
-        </div>
-    )
+function Footer() {
+const year = new Date().getFullYear();
+return (
+<footer>
+    <p>Copyright ⓒ {year}</p>
+</footer>
+);
 }
 
 export default Footer;
