@@ -18,9 +18,10 @@ function App() {
     <div>
         <Header />
         <CreateArea 
-            onAdd={addNote} 
+            onAdd={addNote} />
+            notes.map((noteItem) => {
 
-        />
+            })
         <Note key={1} title="Note title" content="Note content" />
         <Footer />
     </div>
