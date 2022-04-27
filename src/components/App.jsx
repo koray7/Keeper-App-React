@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./CreateArea";
 import Note from "./Note";
@@ -6,8 +6,12 @@ import CreateArea from "./CreateArea";
 
 function App() {
 
-    function addNote(note) {
-        console.log(note)
+    const [notes, setNotes] = useState([])
+
+    function addNote(newNote) {
+        setNotes(prevNotes => {
+            return [...prevNotes, newNote];
+        })
     }
 
     return (
@@ -15,7 +19,7 @@ function App() {
         <Header />
         <CreateArea 
             onAdd={addNote} 
-            
+
         />
         <Note key={1} title="Note title" content="Note content" />
         <Footer />
