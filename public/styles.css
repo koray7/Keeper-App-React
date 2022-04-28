@@ -9,6 +9,7 @@
     body {
         background: #eee;
         padding: 0 16px;
+        background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
     }
     
     header {
@@ -100,4 +101,3 @@
         cursor: pointer;
         outline: none;
 }
-    
